@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Look Settings")]
     private float xRotation;
-    [SerializeField] private float mouseSensitivity = 50;
+    [SerializeField] private float mouseSensitivity = 10;
 
     [Header("Input")]
     private Vector2 moveInput;
@@ -94,6 +94,7 @@ public class PlayerController : MonoBehaviour
         {
             interactInput = true;
         }
+        else { interactInput = false; }
     }
 
     private void Start()
